@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Disease Predictor</h1>
+        <p>Enter your symptoms and get a diagnosis based on machine learning models.</p>
+        <form id="symptomForm">
+            <div class="form-group">
+                <label for="symptom1">Select Symptom 1</label>
+                <select id="symptom1">
+                    <option value="">-- Select Symptom --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom2">Select Symptom 2</label>
+                <select id="symptom2">
+                    <option value="">-- Select Symptom --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom3">Select Symptom 3</label>
+                <select id="symptom3">
+                    <option value="">-- Select Symptom --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom4">Select Symptom 4</label>
+                <select id="symptom4">
+                    <option value="">-- Select Symptom --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom5">Select Symptom 5</label>
+                <select id="symptom5">
+                    <option value="">-- Select Symptom --</option>
+                </select>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitForm()">Predict Disease</button>
+        </form>
+        
+        <div id="result" class="result-container"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
